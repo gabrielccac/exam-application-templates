@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="style.css" />
+  </head>
+  <body>
+    <nav class="sidebar">
+      <div class="sidebar-top">
+        <div class="logo">
+          <img
+            src="assets/logo.svg"
+            alt=""
+            class="logo-img" />
+          <h1 class="logo-label">Exam.io</h1>
+        </div>
+        <h2 class="sidebar-title">Menu</h2>
+        <ul class="nav-link-list">
+          <a class="nav-link">
+            <img
+              src="assets/paperclip-active.svg"
+              alt=""
+              class="icon paperclip-icon active" />
+            <h2 class="nav-link-label paperclip-label">Fazer Exame</h2>
+          </a>
+          <a class="nav-link">
+            <img
+              src="assets/user.svg"
+              alt=""
+              class="icon user-icon" />
+            <h2 class="nav-link-label user-label">Profile</h2>
+          </a>
+        </ul>
+      </div>
+    </nav>
+    <main>
+      <h1 class="main-title">Bom dia, Usuário</h1>
+      <p class="main-subtitle">
+        "O exercício físico, quando obrigatório, não causa danos ao corpo; <br />
+        porém, o conhecimento adquirido sob compulsão não se fixa na mente." - Platão
+      </p>
+      <h2 class="test-creation-title">Crie um novo teste</h2>
+      <div class="questions-creation-list">
+        <div class="multiple-choice-container">
+          <h3 class="multiple-choice-title">Questão de Múltipla Escolha</h3>
+          <input
+            type="text"
+            name=""
+            class="problem-input"
+            style="word-wrap: break-word"
+            placeholder="Enunciado da questão..." />
+          <div class="choice-container">
+            <input
+              type="radio"
+              name="choice"
+              value="A"
+              id="choice-a" />
+            <label for="choice-a"></label>
+            <input
+              type="text"
+              class="choice-input"
+              placeholder="Alternativa a..." />
+          </div>
+          <div class="choice-container">
+            <input
+              type="radio"
+              name="choice"
+              value="B"
+              id="choice-b" />
+            <label for="choice-b"></label>
+            <input
+              type="text"
+              class="choice-input"
+              placeholder="Alternativa b..." />
+          </div>
+          <div class="choice-container">
+            <input
+              type="radio"
+              name="choice"
+              value="C"
+              id="choice-c" />
+            <label for="choice-c"></label>
+            <input
+              type="text"
+              class="choice-input"
+              placeholder="Alternativa C..." />
+          </div>
+          <div class="choice-container">
+            <input
+              type="radio"
+              name="choice"
+              value="D"
+              id="choice-d" />
+            <label for="choice-d"></label>
+            <input
+              type="text"
+              class="choice-input"
+              placeholder="Alternativa d..." />
+          </div>
+        </div>
+        <div class="multiple-choice-container">
+          <h3 class="multiple-choice-title">Questão de Verdadeiro ou Falso</h3>
+          <input
+            type="text"
+            name=""
+            class="problem-input"
+            placeholder="Enunciado da questão..." />
+          <div class="choice-container">
+            <!-- Ajeitar o name de cada radio para cada questão colocando o id de cada questão para o radio só ser considerado entre as opções dela -->
+            <input
+              type="radio"
+              name="choice-vf"
+              value="Verdadeiro"
+              id="true" />
+            <label for="true"></label>
+            <input
+              type="text"
+              class="choice-input"
+              value="Verdadeiro" />
+          </div>
+          <div class="choice-container">
+            <input
+              type="radio"
+              name="choice-vf"
+              value="Verdadeiro"
+              id="false" />
+            <label for="false"></label>
+            <input
+              type="text"
+              class="choice-input"
+              value="Falso" />
+          </div>
+        </div>
+        <div class="multiple-choice-container">
+          <h3 class="multiple-choice-title">Questão de Resposta Numérica</h3>
+          <input
+            type="text"
+            name=""
+            class="problem-input"
+            placeholder="Enunciado da questão..." />
+          <input
+            type="number"
+            class="num-choice-input"
+            placeholder="Resposta" />
+        </div>
+      </div>
+      <div class="question-options-container">
+        <button class="question-options-btn">
+          <img
+            src="assets/multiple-choice.svg"
+            alt="" />
+          Adicionar questão de Múltipla Escolha
+        </button>
+        <button class="question-options-btn">
+          <img
+            src="assets/true-false.svg"
+            alt="" />
+          Adicionar questão V/F
+        </button>
+        <button class="question-options-btn">
+          <img
+            src="assets/number.svg"
+            alt="" />
+          Adicionar questão de Resposta Numérica
+        </button>
+      </div>
+    </main>
+  </body>
+</html>
